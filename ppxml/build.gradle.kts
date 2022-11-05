@@ -16,9 +16,9 @@ java {
 dependencies {
     implementation(kotlin("stdlib"))
 
-    implementation("com.thoughtworks.xstream:xstream:1.4.13")
+    implementation("com.thoughtworks.xstream:xstream:1.4.19")
 
-    testImplementation(platform("org.junit:junit-bom:5.7.0"))
+    testImplementation(platform("org.junit:junit-bom:5.9.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
