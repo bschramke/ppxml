@@ -8,6 +8,10 @@ repositories {
     jcenter()
 }
 
+kotlin {
+    explicitApi()
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
@@ -20,6 +24,7 @@ dependencies {
 
     testImplementation(platform("org.junit:junit-bom:5.9.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("com.google.truth:truth:1.1.3")
 }
 
 tasks {
